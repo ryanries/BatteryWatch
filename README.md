@@ -8,7 +8,8 @@ I have several Windows PCs in my house. These PCs are in different rooms of the 
 - Such software, because it is based on a graphical user interface, is not configurable via registry or configuration file, meaning that it cannot be deployed or controlled at scale, such as via Group Policy, Configuration Manager, Puppet, etc.
 - The software can only interface with that manufacturer's UPS devices, e.g. APC UPSes need APC software, CyberPower UPSes need CyberPower software, etc.
 - The software can only control machines where the UPS is directly connected to the machine's USB or serial ports.
-- Software may only provide rudimentary or non-configurable features unless you're willing to pay for an upgraded "enterprise" version of the software.
+- The software may only provide rudimentary or non-configurable features unless you're willing to pay for an upgraded "enterprise" version of the software.
+- One may have more than one PC connected to a single UPS. In this case, a single data cable from the UPS cannot auto shutdown multiple PCs.
 
 BatteryWatch is a pair of Windows services. The server service is installed on only one machine, and it monitors the battery charge percentage of the connected UPS. Once the battery charge percentage falls below a configurable threshold, the server service sends a UDP broadcast to all devices on the local network segment that it's time to shut down.
 
