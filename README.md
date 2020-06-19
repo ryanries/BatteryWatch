@@ -22,12 +22,17 @@ The "server" machine should be connected to its UPS including the data cable. Th
 `c:\>BatteryWatch.exe`
 
 `BatteryWatch 1.0`
+
 `Server and Listener components for the battery/UPS LAN auto-shutdown utility by Joseph Ryan Ries <ryanries09@gmail.com>`
 
 `Usage:`
+
 `  BatteryWatch -installserver`
+
 `  BatteryWatch -uninstallserver`
+
 `  BatteryWatch -installlistener`
+
 `  BatteryWatch -uninstalllistener`
 
 ---------------------
