@@ -41,7 +41,7 @@ Some example usage:
 
 ![Example usage](./battery2.png)
 
-Both Windows services, the server and the listener, are both embedded within the same executable BatteryWatch.exe. There is no separate installation. This is a portable executble. Just put the executable wherever you want it to live and run the commands to install the server and/or the client. You can install either the server or the listener, or both server and listener on the same machine. Note that only the listener has the ability to actually shut down the machine. The server only monitors the battery and sends shutdown broadcasts.
+Both Windows services, the server and the listener, are both embedded within the same executable BatteryWatch.exe. There is no separate installation. This is a portable executble. Just put the executable wherever you want it to live and run the commands to register the server and/or the client. You can install either the server or the listener, or both server and listener on the same machine. Note that only the listener has the ability to actually shut down the machine. The server only monitors the battery and sends shutdown broadcasts.
 
 Both services run as LOCAL SERVICE, which is more secure because the LOCAL SERVICE account has limited privileges and access.
 
