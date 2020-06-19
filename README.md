@@ -14,21 +14,21 @@ BatteryWatch is a pair of Windows services. The server service is installed on o
 
 On every other machine on the LAN, just the listener service should be installed. The listener listens for the message from the server service and shuts the machine down. So on one machine, both the server and the listener will be installed. On every other machine on the LAN, only the listener will be installed.
 
-The "server" machine should be connected to its UPS including the data cable. The data connection to the UPS is required so that Windows can read the battery charge percentage from the UPS. You should not need to install any of the vendor's UPS software as long as the data cable communicates the current UPS charge level to the operating system. (There should be a battery icon in the Windows notification tray that shows an accurate battery charge reading.) The listener machines do not need data connections to their UPSes. The only need to be on the same LAN/network segment as the server machine.
+The "server" machine should be connected to its UPS including the data cable. The data connection to the UPS is required so that Windows can read the battery charge percentage from the UPS. You should not need to install any of the vendor's UPS software as long as the data cable communicates the current UPS charge level to the operating system. (There should be a battery icon in the Windows notification tray that shows an accurate battery charge reading.) The listener machines do not need data connections to their UPSes. They only need to be on the same LAN/network segment as the server machine.
 
 # Usage
 
 ---------------------
-c:\>BatteryWatch.exe
+`c:\>BatteryWatch.exe`
 
-BatteryWatch 1.0
-Server and Listener components for the battery/UPS LAN auto-shutdown utility by Joseph Ryan Ries <ryanries09@gmail.com>
+`BatteryWatch 1.0`
+`Server and Listener components for the battery/UPS LAN auto-shutdown utility by Joseph Ryan Ries <ryanries09@gmail.com>`
 
-Usage:
-  BatteryWatch -installserver
-  BatteryWatch -uninstallserver
-  BatteryWatch -installlistener
-  BatteryWatch -uninstalllistener
+`Usage:`
+`  BatteryWatch -installserver`
+`  BatteryWatch -uninstallserver`
+`  BatteryWatch -installlistener`
+`  BatteryWatch -uninstalllistener`
 
 ---------------------
 
@@ -45,7 +45,7 @@ Both services run as LOCAL SERVICE, which is more secure because the LOCAL SERVI
 There are several configurable parameters in the registry. They are located in the User hive of the LOCAL SERVICE account. The S-1-5-19 SID belongs to the LOCAL SERVICE account.
 
 ![HKEY_USERS\\S-1-5-19\\Software\\BatteryWatch](./battery3.png)
-`HKEY_USERS\\S-1-5-19\\Software\\BatteryWatch`
+`HKEY_USERS\S-1-5-19\Software\BatteryWatch`
 
 
 The parameters are:
